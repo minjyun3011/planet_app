@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('planets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('english_name');
+            $table->string('jap_name');
+            $table->string('eng_name');
             $table->string('radius');
             $table->string('weight');
+            $table->timestamps();
         });
     }
 
